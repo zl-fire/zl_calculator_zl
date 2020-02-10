@@ -1,20 +1,25 @@
 {
-  "name": "zl_calculator",
+  "name": "zl_calculator_zl",
   "version": "1.0.0",
   "description": "JavaScript之使用栈实现的计算器，可做加减乘除括号运算",
-  "main": "使用栈实现计算器功能.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "packagercmd": "rollup src/index.js --file main.js --format umd --name 'zl_calculator_zlt'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhangluzhanglu/zl_calculator.git"
+    "url": "git+https://github.com/zhangluzhanglu/zl_calculator_zl.git"
   },
-  "keywords": ["栈","javascript","计算器"],
+  "keywords": [
+    "栈",
+    "javascript",
+    "计算器"
+  ],
   "author": "张路",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zhangluzhanglu/zl_calculator/issues"
+    "url": "https://github.com/zhangluzhanglu/zl_calculator_zl/issues"
   },
-  "homepage": "https://github.com/zhangluzhanglu/zl_calculator#readme"
+  "homepage": "https://github.com/zhangluzhanglu/zl_calculator_zl#readme"
 }

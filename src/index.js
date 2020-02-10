@@ -1,7 +1,6 @@
 // 原理：https://blog.csdn.net/u011463794/article/details/85220335
-
 // 使用栈实现计算器功能:此计算器只包含加减乘除括号运行
-function Calculator(express) {
+function zl_calculator(express) {
     //先去掉表达式中的所有空格
     var express = express.replace(/\s/g, "");
     // console.log(express)
@@ -130,16 +129,4 @@ function Calculator(express) {
     return numStack[0]; //返回结果
 }
 
-
-//一些断言测试示例[如果任何提示都没有那就表示全部断言成功]
-console.assert(Calculator("1+2+3+4+5") == 15, `1+2+3+4+5==15 断言失败！`)
-console.assert(Calculator("90-20-20") == 50, `90-20-20==50 断言失败！`)
-console.assert(Calculator("1*2*5-5+4+1") == 10, `1*2*5-5+4+1==10 断言失败！`)
-console.assert(Calculator("3+(1+5)*2") == 15, `3+(1+5)*2==15 `)
-console.assert(Calculator("((1+9-5)/5+9)*2") == 20, `"((1+9-5)/5+9)*2==20 断言失败！`)
-console.assert(Calculator("(3+7)*5-49") == 1, `(3+7)*5-49==1 断言失败！`)
-console.assert(Calculator("(1.2+0.8+3)/5") == 1, `(1.2+0.8+3)/5==1 断言失败！`)
-console.assert(Calculator("3+(1.2+0.8+3)/5+7") == 11, `3+(1.2+0.8+3)/5+7==11 断言失败！`)
-console.assert(Calculator("((10-9)/10*(5+(40+60)*0.05))") == 1, `((10-9)/10*(5+(40+60)*0.05))==1 断言失败！`)
-
-
+export { zl_calculator }
