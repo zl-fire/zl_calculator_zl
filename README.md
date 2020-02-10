@@ -16,9 +16,9 @@
 # 3. 模块使用方法
 
 * ***使用`script`标签就进行引入使用***
+   ```js
    对于这种方式，直接下载dist目录下的`zl_calculator_zl.js`文件使用即可
    如：
-   ```js
    <script src="./zl_calculator_zl.js"> </script>
    <script>
 
@@ -28,11 +28,21 @@
    </script>
    ```
 * ***使用`import`方式引入使用***
-   对于这种方式，直接下载dist目录下的`zl_calculator_zl.js`文件使用即可
    ```js
        1. 安装： npm i  zl_calculator_zl -S
 
        2. 引入： import {zl_calculator_zl} from 'zl_calculator_zl'
+
+       3. 使用： var res=zl_calculator_zl("3+(1.2+0.8+3)/5+7");//res就是返回的最终结果
+       
+   </script>
+   ```
+
+* ***使用`require`方式在nodejs中引入使用***
+   ```js
+       1. 安装： npm i  zl_calculator_zl -S
+
+       2. 引入： var { zl_calculator_zl } = require("zl_calculator_zl")
 
        3. 使用： var res=zl_calculator_zl("3+(1.2+0.8+3)/5+7");//res就是返回的最终结果
        
