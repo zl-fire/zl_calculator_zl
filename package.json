@@ -1,6 +1,6 @@
 {
   "name": "zl_calculator_zl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript之使用栈实现的计算器，可做加减乘除括号运算",
   "main": "main.js",
   "scripts": {
