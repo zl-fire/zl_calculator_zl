@@ -13,7 +13,7 @@ function zl_calculator_zl(express) {
         if (sy == "+" || sy == "-") {
             return 1;  //+，-优先级较低为1
         }
-        else if (sy == "*" || sy == "/") {
+        else if (sy == "*" || sy == "/" || sy=="%") {
             return 2; //*，/优先级较高为2
         }
         else return 0; //如果不为加减乘除符号，则量化为0
@@ -25,7 +25,7 @@ function zl_calculator_zl(express) {
     }
     //判断某个字符串是否为运算符
     function isOpt(n) {
-        var opts = ['+', '-', '*', '/']
+        var opts = ['+', '-', '*', '/','%']
         return opts.includes(n)
     }
     //开始把中缀表达式转换为右缀表达式
@@ -122,8 +122,11 @@ function zl_calculator_zl(express) {
             else if (houExpress[i] == "*") {
                 res = parseFloat(numStack[maxv - 1]) * parseFloat(numStack[maxv]);
             }
-            else {
+            else if (houExpress[i] == "/") {
                 res = parseFloat(numStack[maxv - 1]) / parseFloat(numStack[maxv]);
+            }
+            else{  //取余%
+                res = parseFloat(numStack[maxv - 1]) % parseFloat(numStack[maxv]);
             }
             numStack.pop();
             numStack.pop();
