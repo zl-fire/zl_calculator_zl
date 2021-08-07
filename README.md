@@ -31,6 +31,7 @@
    ```
 * ***使用`import`方式引入使用***
    ```js
+   <script>
        1. 安装： npm i  zl_calculator_zl -S
 
        2. 引入： import {zl_calculator_zl} from 'zl_calculator_zl'
@@ -42,6 +43,7 @@
 
 * ***使用`require`方式在nodejs中引入使用***
    ```js
+   <script>
        1. 安装： npm i  zl_calculator_zl -S
 
        2. 引入： var { zl_calculator_zl } = require("zl_calculator_zl")
