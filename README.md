@@ -31,26 +31,24 @@
    ```
 * ***使用`import`方式引入使用***
    ```js
-   <script>
+
        1. 安装： npm i  zl_calculator_zl -S
 
        2. 引入： import {zl_calculator_zl} from 'zl_calculator_zl'
 
        3. 使用： var res=zl_calculator_zl("3+(1.2+0.8+3)/5+7");//res就是返回的最终结果
        
-   </script>
    ```
 
 * ***使用`require`方式在nodejs中引入使用***
    ```js
-   <script>
+ 
        1. 安装： npm i  zl_calculator_zl -S
 
        2. 引入： var { zl_calculator_zl } = require("zl_calculator_zl")
 
-       3. 使用： var res=zl_calculator_zl("3+(1.2+0.8+3)/5+7");//res就是返回的最终结果
-       
-   </script>
+       3. 使用： var res=zl_calculator_zl("3+(1.2+0.8+3)/5+7");//res就是返回的最终结果 
+
    ```
 
 * ***一些断言测试示例【如果任何提示都没有那就表示全部断言成功】***
